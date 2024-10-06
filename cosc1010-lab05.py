@@ -94,10 +94,20 @@ min_temps = [
 # You cannot use in-built functions like max(), min() or sort the lists
 # The use of len() is fine
 # You can do this in two individual loops, or a single loop if you wish 
-
+max_temp= 0
+min_temp=0
+for tempmax in max_temps:
+    if tempmax>max_temp:
+        max_temp=tempmax
+    else:
+        max_temp=max_temp
+for tempmin in min_temps:
+    if tempmin<min_temp:
+        min_temp=tempmin
+    else:
+        min_temp=min_temp
 print(f"Max temp = {max_temp}")
 print(f"Min temp = {min_temp}")
-
 # Given the below list 
 numbers = [-61, -76, 94, 21, 97, -4, 21, 56, -26, 9, 100, 56, -7, -32, 60, -68, -25, 3, -10, -83, 63, 0, 13, -99, 87, -46, -88, -71, 4, -99, -15, -12, 72, -1, -20, -90, 32, -36, -59, 83, 78, 52, 43, 55, 12, 16, -37, -5, -98, -53]
 # Count how many positive numbers occur, how many negative numbers occur, and how many times 0 occurs
